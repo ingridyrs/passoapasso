@@ -54,3 +54,7 @@ for(let botao of botoes){
 //     // código a repetir
 //     botao.addEventListener('click', aoClicar);
 // }
+
+
+// o desafio do exercicio foi posicionar corretamente os gifs na página e deixá-la responsiva mesmo com os gifs sobrepostos. Para fazer isso, usei um seletor mais específico para chegar exatamente no GIF referido, visto que há dois no projeto. O Gif "newPattern" deu mais trabalho para ser posicionado, rotacionado  e fixado na página. Coloquei border radious para tirar uma aresta do gif que cobria a mão presente no design.
+// Usei media query para determinar que o gif desapareceria em telas menores que 740px.

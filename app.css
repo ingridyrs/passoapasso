@@ -82,18 +82,35 @@ html, body{
     height: 100%;
     width: 100%;
     margin: auto;
-    display: flex;
+    max-width: 860px;
     opacity: 0;
     transition: opacity 0.2s ease-out;
+    position: relative;
   }
   
   .passos > div.passo-ativo{
     opacity: 1;
   }
   
-  .passos > div > img{
+  .passos > div > img[src$=".svg"]{
     width: 100%;
     max-width: 860px;
     align-self: center;
     margin: auto;
+  }
+
+  .passos > div > img[src$=".gif"]{
+    position: absolute;
+    top: 54.8%;
+    left: 55.9%;
+    width: 12.6%;
+    transform: rotate(10deg);
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  @media (max-width:740px) {
+    .passos > div > img[src$=".gif"]{
+    display: none;
+    }
+    
   }
